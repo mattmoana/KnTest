@@ -1,5 +1,7 @@
 # KnTest
 
+Java 17, Gradle, TestNG, Allure
+
 Test Task1: Add book (expected code is set for 400) because otherwise the test fails as the same book cannot be added twice.
 Login is not neccessary during post and delete methods (added basic token in the header)
 
