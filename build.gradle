@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.11.2'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.6.1'
+    implementation 'io.rest-assured:rest-assured:5.3.0'
+    implementation 'org.slf4j:slf4j-simple:2.0.5'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+    testImplementation 'org.aspectj:aspectjweaver:1.9.7'
+    testImplementation 'io.qameta.allure:allure-testng:2.18.0'
+    testImplementation 'io.qameta.allure:allure-commandline:2.18.0'
+    testImplementation 'io.qameta.allure:allure-assertj:2.18.0'
+    testImplementation 'io.qameta.allure:allure-rest-assured:2.18.0'
+    testImplementation 'io.qameta.allure:allure-java-commons:2.18.0'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
